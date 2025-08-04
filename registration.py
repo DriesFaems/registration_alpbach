@@ -33,8 +33,7 @@ with st.form("registration_form"):
     email = st.text_input("Please enter your email address *", placeholder="e.g., john.doe@example.com")
     
     # user needs to indicate with yes or no if they are a student
-    uploaded_file = st.file_uploader("Please upload a PDF of your LinkedIn profile *", 
-                                   help="You can find this PDF by going to your LinkedIn profile page, click on Resources, and click on Save PDF. By uploading the file, you agree that we use and store your LinkedIn profile for the purpose of matchig for the generative AI course", 
+    uploaded_file = st.file_uploader("Please upload a PDF of your LinkedIn profile. You can find this PDF by going to your LinkedIn profile page, click on Resources, and click on Save PDF. By uploading the file, you agree that we use and store your LinkedIn profile for the purpose of matchig for the Alpbach workshop", 
                                    type="pdf")
     
     st.markdown("*Required fields")
